@@ -12,4 +12,4 @@
 	<script src="js/modal.js"></script>
 </body>
 
-</html><!--Teste para o git e git hub-->
+</html><!--Teste para o git e git hub -- novo teste-->
