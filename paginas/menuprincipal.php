@@ -21,7 +21,7 @@
 	            <nav>
 	                <ul>
 	                    <li><a href="#" id="local">Localização</a></li>
-	                    <li><a href="#">Contato</a></li>
+	                    <li><a href="#" id="email">Contato</a></li>
 	                    <li><a id="login">Administração</a></li>
 	                </ul>
 	            </nav>

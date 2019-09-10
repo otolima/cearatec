@@ -9,20 +9,12 @@ $(document).ready(function(){
        if(!$(this).hasClass("ativo")) {
            $(this).addClass("ativo");
            $(".titulo_produto p span ").html("<span class='fa fa-arrow-circle-o-up'></span");
-           $(".box_menu").fadeToggle();
+           $(".box_menu").fadeToggle(1000);
        } else {
             $(this).removeClass("ativo");
             $(".titulo_produto p span ").html("<span class='fa fa-arrow-circle-o-down'></span");
-           $(".box_menu").fadeToggle();
+           $(".box_menu").fadeToggle(1000);
        }
         
 	});
-    $(".box_menu ul li").on("mouseover",function(e){
-        e.preventDefault();
-         $(".box_menu ul li ul").css("display":"inline-block");
-    });
-    $(".box_menu ul li").on("mousedown",function(e){
-        e.preventDefault();
-      //  $(".box_menu ul li ul").fadeOut(5000);
-    });
 });

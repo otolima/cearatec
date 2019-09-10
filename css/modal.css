@@ -138,6 +138,140 @@ label[for="senha"] {
 .exibir .box_login {
     animation: modal 5s;
 }
+
+/*Contato*/
+.container_contato {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    overflow: auto;
+}
+
+.container_contato.exibir {
+    display: flex;
+}
+
+.box_contato {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    background: black;
+    border: 1px solid #000;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.box_contato button.fechar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    background: rgb(2, 80, 126);
+    width: 100%;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    max-width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.box_contato form {
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+.div_input {}
+
+
+
+label[for="nome"] {
+    color: white;
+    display: block;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    width: 100%;
+    max-width: 97px;
+    text-align: center;
+    margin: 10px 0;
+
+}
+.box_contato label[for="assunto"],.box_contato .box_contato label[for="msg"],.box_contato label[for="celular"] {
+    color: white;
+    display: block;
+    text-indent: 22px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    width: 100%;
+    max-width: 97px;
+    text-align: center;
+    margin: 10px 0;
+}
+label[for="email"] {
+    color: white;
+    display: block;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    width: 100%;
+    max-width: 97px;
+    text-align: center;
+    margin: 10px 0;
+}
+.box_contato input {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    text-indent: 15px;
+    border: 1px solid #BCBCBC;
+    margin: 1px auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #000;
+    color: #BCBCBC;
+}
+
+.box_contato input[type="email"],.box_contato input[type="text"],.box_contato textarea {
+    border: 1px solid #BCBCBC;
+}
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    text-indent: 10px;
+    border: 1px solid #BCBCBC;
+    margin: 1px auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #000;
+    color: #BCBCBC;
+    text-align: center;
+}
+.box_contato input[type="submit"] {
+    color: white;
+    height: 40px;
+    width: 100%;
+    max-width: 100px;
+    background: rgb(2, 80, 126);
+    margin: 10px 20px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 900;
+}
+/*Contato Fim */
+
 /* Modal Login Fim */
 
 /* Modal Mapa */
@@ -210,6 +344,32 @@ label[for="senha"] {
         max-width: 272px;
     }
 }
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
 
+}
+
+
+@media screen and (min-width:1024px) {
+.box_contato input {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    text-indent: 10px;
+    border: 1px solid #BCBCBC;
+    margin: 1px auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #000;
+    color: #BCBCBC;
+    font-size: 1.3rem
+}
+    .box_contato {
+        height: 87%;
+    }
+    textarea {
+    padding: 60px;
+    height: 160px;
+    font-size: 2rem;
+}
 }

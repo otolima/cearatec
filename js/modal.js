@@ -22,3 +22,10 @@ local.addEventListener("click", function (e) {
     e.preventDefault();
     iniciar_Modal("mapa");
 });
+
+var Contato_email = document.getElementById("email");
+
+Contato_email.addEventListener("click", function (e) {
+    e.preventDefault();
+    iniciar_Modal("contato");
+});
